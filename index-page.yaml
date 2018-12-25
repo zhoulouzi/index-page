@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: index-page
-        image: zhoulouzi/index-page:latest
+        image: zhoulouzi/index-page:${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_REVISION}}
         ports:
         - containerPort: 80
           protocol: TCP
