@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://index.zhoulouzi.com/"
 languageCode = "en-us"
-title = "slate theme demo"
+title = "Index pages"
 theme = "slate"
 
 publishDir = "docs"
