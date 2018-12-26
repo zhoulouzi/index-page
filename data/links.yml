@@ -19,6 +19,13 @@ tiles:
   txt_color: "#ffffff"
   bg_color: "#ffb900"
   tags: ["search"]
+-
+  name: "wikipedia"
+  url: "https://wikipedia.org"
+  img: "logos/wikipedia.svg"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+  tags: ["search"]
 # collaborative
 -
   name: "teambition"
@@ -28,10 +35,69 @@ tiles:
   txt_color: "#ff9900"
   tags: ["collaborative"]
 -
-  name: "石墨文档"
+  name: "shimo"
   url: "https://shimo.im/"
   img: ""
   bg_color: "#191414"
   txt_color: "#1db954"
   tags: ["collaborative"]
-#
+# coding
+-
+  name: "github"
+  url: "https://github.com/"
+  img: "logos/github.png"
+  bg_color: "#ffffff"
+  txt_color: "#ff9900"
+  tags: ["coding"]
+# social
+-
+  name: "twitter"
+  url: "https://twitter.com"
+  img: "logos/twitter.svg"
+  bg_color: "#1da1f2"
+  txt_color: "#f5f8fa"
+  tags: ["social"]
+-
+  name: "facebook"
+  url: "https://facebook.com"
+  img: "logos/facebook.svg"
+  bg_color: "#ffffff"
+  txt_color: "#ff9900"
+  tags: ["social"]
+# live
+-
+  name: "douyu"
+  url: "https://douyu.com"
+  img: "logos/douyu.png"
+  bg_color: "#f1f1f1"
+  txt_color: "#6441a5"
+  tags: ["video"]
+-
+  name: "twitch"
+  url: "https://twitch.com"
+  img: "logos/twitch.svg"
+  bg_color: "#f1f1f1"
+  txt_color: "#6441a5"
+  tags: ["video"]
+-
+  name: "youtube"
+  url: "https://youtube.com"
+  img: "logos/youtube.svg"
+  bg_color: "#ffffff"
+  txt_color: "#cd201f"
+  tags: ["video"]
+# shopping
+-
+  name: "amazon"
+  url: "https://amazon.com"
+  img: "logos/amazon.svg"
+  bg_color: "#ffffff"
+  txt_color: "#ff9900"
+  tags: ["shopping"]
+-
+  name: "taobao"
+  url: "https://taobao.com"
+  img: "logos/taobao.png"
+  bg_color: "#ffffff"
+  txt_color: "#ff9900"
+  tags: ["shopping"] 

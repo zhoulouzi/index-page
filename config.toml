@@ -19,3 +19,23 @@ icon = "search"
 name = "collaborative"
 tag = "collaborative"
 icon = "star"
+
+[[ params.nav ]]
+name = "coding"
+tag = "coding"
+icon = "code"
+
+[[ params.nav ]]
+name = "social"
+tag = "social"
+icon = "users"
+
+[[ params.nav ]]
+name = "video"
+tag = "video"
+icon = "twitch"
+
+[[ params.nav ]]
+name = "shopping"
+tag = "shopping"
+icon = "shopping-bag"
