@@ -2,6 +2,7 @@ baseURL = "https://index.zhoulouzi.com/"
 languageCode = "en-us"
 title = "Index pages"
 theme = "slate"
+googleAnalytics = "UA-110602463-2"
 
 publishDir = "docs"
 
@@ -10,26 +11,11 @@ Favicon = "favicon.ico"
 OpenLinksInNewWindow = true
 
 [[ params.nav ]]
-name = "favorites"
-tag = "favorite"
-icon = "star"
-
-[[ params.nav ]]
 name = "search"
 tag = "search"
 icon = "search"
 
 [[ params.nav ]]
-name = "shopping"
-tag = "shopping"
-icon = "shopping-basket"
-
-[[ params.nav ]]
-name = "music"
-tag = "music"
-icon = "headphones"
-
-[[ params.nav ]]
-name = "video"
-tag = "video"
-icon = "video-camera"
+name = "collaborative"
+tag = "collaborative"
+icon = "star"
