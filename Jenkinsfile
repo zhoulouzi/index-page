@@ -47,7 +47,9 @@ spec:
       steps {
         container('docker') {
           sh 'docker version'
-          docker.build("zhoulouzi/index")
+          script {
+            docker.build("zhoulouzi/index")
+          }
         }
       }
     }
