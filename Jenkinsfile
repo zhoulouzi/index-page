@@ -1,4 +1,7 @@
 pipeline {
+  enviroment {
+    registry = 'zhoulouzi/index-page'
+  }
   agent {
     kubernetes {
       label 'mypod'
@@ -19,6 +22,16 @@ spec:
     command:
     - cat
     tty: true
+    volumeMounts:
+    - mountPath: /var/run/docker.sock
+      name: docker-socket-volume
+    securityContext:
+      privileged: true
+  volumes:
+  - name: docker-socket-volume
+    hostPath:
+      path: /var/run/docker.sock
+      type: File
 """
     }
   }
