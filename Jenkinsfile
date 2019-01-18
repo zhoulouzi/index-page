@@ -36,10 +36,18 @@ spec:
     }
   }
   stages {
+    stage('Clone repo') {
+      steps{
+        container('docker') {
+          checkout scm
+        }
+      }
+    }
     stage('Run docker') {
       steps {
         container('docker') {
           sh 'docker version'
+          docker.build("zhoulouzi/index")
         }
       }
     }
