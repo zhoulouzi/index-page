@@ -1,5 +1,5 @@
 pipeline {
-  enviroment {
+  environment {
     registry = 'zhoulouzi/index-page'
   }
   agent {
