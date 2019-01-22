@@ -58,6 +58,13 @@ spec:
       }
     }
     stage('Deploy to test cluster') {
+      when {
+          branch 'master'
+      }
+      input {
+        message "Should we deploy to test cluster?"
+        ok "Yes, we should."
+      }
       steps {
         container('docker') {
           script {
