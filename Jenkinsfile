@@ -69,7 +69,7 @@ spec:
             secretName: 'dockerhub-auth',
             dockerCredentials: [
               [credentialsId: 'dockerhub-auth']
-            ],
+            ]
           )
         }
       }
