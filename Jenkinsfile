@@ -48,7 +48,7 @@ spec:
         container('docker') {
           sh 'docker version'
           script {
-            docker.withRegistry('https://docker.io/', 'dockerhub-auth') {
+            docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-auth') {
               def image = docker.build("${env.DOCKER_REPO}:${env.BUILD_ID}")
               image.push()
               // image.push('latest')
