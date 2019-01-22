@@ -46,7 +46,7 @@ spec:
       - name: $KUBERNETES_SECRET_NAME
       containers:
       - name: index-page
-        image: ${DOCKER_REPO}:${BUILD_ID}"
+        image: ${DOCKER_REPO}:${BUILD_ID}
         ports:
         - containerPort: 80
           protocol: TCP
