@@ -59,18 +59,19 @@ spec:
     }
     stage('Deploy to test cluster') {
       steps {
-        container('docker')
-        script {
-          kubernetesDeploy(
-            kubeconfigId: 'test-cluster',
-            configs: 'index-page-forjenkins.yaml',
-            enableConfigSubstitution: true,
-            secretNamespace: 'default',
-            secretName: 'dockerhub-auth',
-            dockerCredentials: [
-              [credentialsId: 'dockerhub-auth']
-            ]
-          )
+        container('docker') {
+          script {
+            kubernetesDeploy(
+              kubeconfigId: 'test-cluster',
+              configs: 'index-page-forjenkins.yaml',
+              enableConfigSubstitution: true,
+              secretNamespace: 'default',
+              secretName: 'dockerhub-auth',
+              dockerCredentials: [
+                [credentialsId: 'dockerhub-auth']
+              ]
+            )
+          }
         }
       }
     }
