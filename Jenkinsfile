@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = 'zhoulouzi/index-page'
+    DOCKER_REPO = 'zhoulouzi/index-page'
   }
   agent {
     kubernetes {
@@ -48,7 +48,11 @@ spec:
         container('docker') {
           sh 'docker version'
           script {
-            docker.build("zhoulouzi/index")
+            docker.withRegistry('https://docker.io/', 'dockerhub-auth') {
+              def image = docker.build("${env.DOCKER_REPO}:${env.BUILD_ID}")
+              image.push()
+              // image.push('latest')
+            }
           }
         }
       }
