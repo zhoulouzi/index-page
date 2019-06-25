@@ -94,10 +94,10 @@ tiles:
   bg_color: "#ffffff"
   txt_color: "#ff9900"
   tags: ["shopping"]
--
-  name: "taobao"
-  url: "https://taobao.com"
-  img: "logos/taobao.png"
-  bg_color: "#ffffff"
-  txt_color: "#ff9900"
-  tags: ["shopping"] 
+#-
+#  name: "taobao"
+#  url: "https://taobao.com"
+#  img: "logos/taobao.png"
+#  bg_color: "#ffffff"
+#  txt_color: "#ff9900"
+#  tags: ["shopping"] 
